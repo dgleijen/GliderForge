@@ -250,7 +250,7 @@ function GLIDERFORGE.register_glider(modname, glider_name, def)
     end
     core.register_tool(modname .. ":" .. glider_name, {
         description = def.description or "Glider",
-        inventory_image = def.inventory_image or "[fill:64x64:0,0:#ffffff]",
+        inventory_image = def.inventory_image or "[fill:64x64:0,0:#ffffff",
         on_use = function(stack, player)
             return Use_Glider(stack, player, glider_name)
         end,
